@@ -1,7 +1,7 @@
 # Building Velocity from archlinux image
 FROM archlinux:latest
 # Setting the working directory
-WORKDIR /workspace/
+WORKDIR /workspace
 # Copying system files
 COPY files/os-release /etc/
 COPY files/hostname /etc/
