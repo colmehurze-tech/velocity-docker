@@ -6,7 +6,7 @@ sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/ins
 # Downloading oh-my-posh
 curl -s https://ohmyposh.dev/install.sh | bash -s
 # Installing other packages
-pacman -S --noconfirm --needed base-devel git sudo nano vim
+pacman -S --noconfirm --needed base-devel git sudo nano vim unzip
 # Setting up the new user
 ./user-setup.sh
 # Setting up yay
