@@ -2,7 +2,7 @@ name: Build Velocity DockerImage
 
 on:
   push: 
-   tags: ['v*']
+    tags: ['v*']
   workflow_dispatch:
   schedule:
    - cron: '0 0 1 * *'  # Monthly build
