@@ -12,5 +12,5 @@ pacman -S --noconfirm --needed base-devel git sudo nano vim
 # Setting up yay
 git clone https://aur.archlinux.org/yay.git
 cd yay
-chown -R user:user
+chown -R user:user .
 sudo -u user makepkg -si
