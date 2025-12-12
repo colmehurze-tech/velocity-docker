@@ -14,4 +14,4 @@ git clone https://aur.archlinux.org/yay.git
 cd yay
 useradd -m builder
 chown -R builder:builder .
-sudo -u builder makepkg -si
+su builder -c "makepkg -si --noconfirm"
