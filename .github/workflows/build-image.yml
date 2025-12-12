@@ -21,6 +21,6 @@ jobs:
 
   - name: Build the image with docker
     run: |
-    cd /workspace/
-    docker build -t velocity .
+     cd /workspace/
+     docker build -t velocity .
 
