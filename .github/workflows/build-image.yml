@@ -17,10 +17,10 @@ jobs:
   
   steps:
   - name: Checkout repository
-      uses: actions/checkout@v4
+    uses: actions/checkout@v4
 
-  -name: Build the image with docker
-   run: |
-   cd /workspace/
-   docker build -t velocity .
+  - name: Build the image with docker
+    run: |
+    cd /workspace/
+    docker build -t velocity .
 
