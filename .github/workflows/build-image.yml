@@ -1,2 +1,26 @@
+name: Build Velocity DockerImage
 
+on:
+  push: 
+   tags: ['v*']
+  workflow_dispatch:
+  schedule:
+   - cron: '0 0 1 * *'  # Monthly build
+
+env:
+  IMAGE=velocity-linux
+
+jobs: 
+  build-image:
+
+  runs-on: ubuntu-latest
+  
+  steps:
+  - name: Checkout repository
+      uses: actions/checkout@v4
+
+  -name: Build the image with docker
+   run: |
+   cd /workspace/
+   docker build -t velocity .
 
